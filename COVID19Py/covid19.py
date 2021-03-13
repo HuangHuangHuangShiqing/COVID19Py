@@ -70,7 +70,7 @@ class COVID19(object):
         response = requests.get(self.url + endpoint, {*params, "source":self.data_source}) #syntax error fixed
         response.raise_for_status()
         return response.json()
-
+'''
     def getAll(self, timelines=False):
         self._update(timelines)
         return self.latestData
@@ -122,6 +122,7 @@ class COVID19(object):
             data = ranked
 
         return data
+'''
 '''
     def getLocationByCountryCode(self, country_code, timelines=False) -> List[Dict]:
         """
